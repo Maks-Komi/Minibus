@@ -1,8 +1,8 @@
 #include<iostream>
-#include"Header.h"
+#include"class minibus.h"
 using namespace std;
 
-void print_minibus(int free, int ocup) {
+ void Minibus::print_minibus(int free, int ocup) {
 	for (int i = 0; i < 8; i++) {
 		if (i == 0 || i == 7)
 			cout << "+";

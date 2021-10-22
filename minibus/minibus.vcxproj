@@ -24,9 +24,6 @@
     <ClCompile Include="functions.cpp" />
     <ClCompile Include="Header.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Header.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
