@@ -19,5 +19,5 @@ public:
         this->latitude = lat;
         this->longitub = lon;
     }
-    string print_bus_stop(int, double, double);
+    void print_bus_stop(int, double, double);
 };

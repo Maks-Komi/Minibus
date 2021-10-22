@@ -1,6 +1,4 @@
 #pragma once
-#include<string>
-using namespace std;
 
 class Minibus {
 	const int total_place = 20;
@@ -9,5 +7,5 @@ class Minibus {
 	double latitude = 0.0, longitub = 0.0;
 public:
 	int completion();
-	string print_minibus(int, int, double, double);
+	void print_minibus(int, int, double, double);
 };
