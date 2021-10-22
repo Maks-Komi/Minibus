@@ -20,4 +20,5 @@ public:
         lat = lat;
         lon = lon;
     }
+    void print_bus_stop(int emount_piople);
 };

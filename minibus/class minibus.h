@@ -6,6 +6,6 @@ class Minibus {
 	int free_place;
 	double latitude, longitub;
 public:
-	int completion();
+	int completion() {}
 	void print_minibus(int, int);
 };
