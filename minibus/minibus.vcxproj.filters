@@ -24,8 +24,8 @@
     <ClCompile Include="class minibus.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Header.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="bus stop.h">
+      <Filter>Файлы заголовков</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

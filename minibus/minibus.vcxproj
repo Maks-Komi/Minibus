@@ -22,7 +22,7 @@
     <ClCompile Include="class minibus.cpp" />
     <ClCompile Include="class minibus.h" />
     <ClCompile Include="functions.cpp" />
-    <ClCompile Include="Header.cpp" />
+    <ClCompile Include="bus stop.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
