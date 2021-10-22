@@ -2,14 +2,14 @@
 #include"class minibus.h"
 using namespace std;
 
- void Minibus::print_minibus(int free, int ocup) {
+ void Minibus::print_minibus(int amount_place, const int total_place) {
 	for (int i = 0; i < 8; i++) {
 		if (i == 0 || i == 7)
 			cout << "+";
 		else
 			cout << "-";
 	}
-	cout << endl << "|" << " " << free << "/" << ocup << "  " << "\\" << endl;
+	cout << endl << "|" << " " << amount_place << "/" << total_place << "  " << "\\" << endl;
 	for (int i = 0; i < 10; i++) {
 		if (i == 0) {
 			cout << "+";
@@ -23,3 +23,12 @@ using namespace std;
 	}
 	cout << endl;
 }
+
+ int Minibus::completion() {
+	 return 0;
+ }
+
+ int main() {
+	 Minibus a;
+	a.print_minibus(5, 20);
+ }

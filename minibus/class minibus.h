@@ -1,7 +1,7 @@
 #pragma once
 
 class Minibus {
-	int total_place = 20;
+	const int total_place = 20;
 	int amount_people;
 	int free_place;
 	double latitude, longitub;
