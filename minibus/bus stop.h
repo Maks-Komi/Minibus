@@ -9,16 +9,15 @@
 using namespace std;
 
 class Bus_stop {
-    int amount_people;
-    int max_people;
-    double lat;
-    double lon;
+    int amount_people = 0;
+    int max_people = 50;
+    double latitude = 0.0, longitub = 0.0;
 public:
     Bus_stop(int am_peop, int max_peop, double lat, double lon) {
         amount_people = am_peop;
         max_people = max_peop;
-        lat = lat;
-        lon = lon;
+        this->latitude = lat;
+        this->longitub = lon;
     }
-    void print_bus_stop(int emount_piople);
+    void print_bus_stop(int, double, double);
 };

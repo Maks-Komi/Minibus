@@ -3,13 +3,23 @@
 #include"bus stop.h"
 using namespace std;
 
-
-void Bus_stop::print_bus_stop(int emount_piople) {
+//Функция выводит на экран остановку: amoun_people - количество людей на остановке
+void Bus_stop::print_bus_stop(int amount_people, double lat, double lon) {
+	cout << "S: " << lat << endl << "D: " << lon << endl;//S - широта, D - долгота
+	//Цикл печатает верх остаовки
 	for (int i = 0; i < 8; i++)
 	{
-		cout << "*";
+		cout << "*";   
 	}
-	cout << endl << "*" << "  " << emount_piople << "  " << "*" << endl;
+	//Выводит количество людей
+	if (amount_people < 10) {
+		//если людей меньше 10-ти, пишем ноль в начале
+		cout << endl << "*" << "  " << "0" << amount_people << "  " << "*" << endl;
+	}
+	else {
+		cout << endl << "*" << "  " << amount_people << "  " << "*" << endl;
+	}
+	//Цикл печатает низ остановки
 	for (int i = 0; i < 8; i++)
 	{
 		cout << "*";
@@ -17,7 +27,11 @@ void Bus_stop::print_bus_stop(int emount_piople) {
 	cout << endl;
 }
 
-void Minibus::print_minibus(int amount_place, const int total_place) {
+
+//Функуия выводит на экран маршрутку: amount_people - количество людей в маршрутке, total_place - всего мест
+void Minibus::print_minibus(int amount_people, const int total_place, double lat, double lon) {
+	cout << "S: " << lat << endl << "D: " << lon << endl;//S - широта, D - долгота
+	//Цикл печатает верх маршрутки-
 	for (int i = 0; i < 8; i++) {
 		if (i == 0 || i == 7) {
 			cout << "+";
@@ -26,7 +40,15 @@ void Minibus::print_minibus(int amount_place, const int total_place) {
 			cout << "-";
 		}
 	}
-	cout << endl << "|" << " " << amount_place << "/" << total_place << "  " << "\\" << endl;
+	//Выводит количество людей в маршрутке и сколько всего мест
+	if (amount_people < 10) {
+		//если людей меньше 10-ти, пишем ноль в начале
+		cout << endl << "|" << " " << "0" << amount_people << "/" << total_place << " " << "\\" << endl;
+	}
+	else {
+		cout << endl << "|" << " " << amount_people << "/" << total_place << " " << "\\" << endl;
+	}
+	//Цикл печатает низ маршрутки
 	for (int i = 0; i < 10; i++) {
 		if (i == 0) {
 			cout << "+";
@@ -48,6 +70,8 @@ void Minibus::print_minibus(int amount_place, const int total_place) {
  int main() {
 	 Minibus a;
 	 Bus_stop b(0, 100, 53, 37);
-	 a.print_minibus(5, 20);
-	 b.print_bus_stop(3);
+	 b.print_bus_stop(3, 57.35, 57.37);
+	 a.print_minibus(5, 20, 57.35, 57.37);
+	 
+	 
  }
