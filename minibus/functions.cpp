@@ -4,9 +4,10 @@ using namespace std;
 
  void Minibus::print_minibus(int amount_place, const int total_place) {
 	for (int i = 0; i < 8; i++) {
-		if (i == 0 || i == 7)
+		if (i == 0 || i == 7) {
 			cout << "+";
-		else
+		}
+		else {
 			cout << "-";
 	}
 	cout << endl << "|" << " " << amount_place << "/" << total_place << "  " << "\\" << endl;
@@ -14,12 +15,15 @@ using namespace std;
 		if (i == 0) {
 			cout << "+";
 		}
-		else if (i == 1 || i == 7)
+		else if (i == 1 || i == 7) {
 			cout << "0";
-		else if (i == 9)
+		}
+		else if (i == 9) {
 			cout << "\\";
-		else
+		}
+		else {
 			cout << "-";
+		}	
 	}
 	cout << endl;
 }
