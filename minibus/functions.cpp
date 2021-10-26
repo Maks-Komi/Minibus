@@ -70,8 +70,10 @@ void Minibus::print_minibus(int amount_people, const int total_place, double lat
  int main() {
 	 Minibus a;
 	 Bus_stop b(0, 100, 53, 37);
+	 People q;
 	 b.print_bus_stop(3, 57.35, 57.37);
 	 a.print_minibus(5, 20, 57.35, 57.37);
-	 
+	 q.people_time();
+	 q.print();
 	 
  }

@@ -7,10 +7,9 @@
 
 #include <iostream>
 using namespace std;
-
+int max_people = 50;
 class Bus_stop {
     int amount_people = 0;
-    int max_people = 50;
     double latitude = 0.0, longitub = 0.0;
 public:
     Bus_stop(int am_peop, int max_peop, double lat, double lon) {
@@ -20,4 +19,23 @@ public:
         this->longitub = lon;
     }
     void print_bus_stop(int, double, double);
+};
+
+//
+class People {
+    int start_time = 18000;//начало 5 часов утра в секундах 
+    int time_interval = 68400 / 900;//из полного рабочего дня делем 15 минут ,
+    //примрное количество изменений на остановке
+    int human1;
+public:
+    int people_time(int human, int time) {
+        for (int i = 0; i < time_interval; i++) {
+            human[i] = rand() % max_people;
+            human1 = human;
+            return human[i];
+        };
+    };
+    void print() {
+        cout << human1;
+    }
 };
