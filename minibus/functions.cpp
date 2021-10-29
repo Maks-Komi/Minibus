@@ -50,4 +50,5 @@ void Minibus::print_minibus(int amount_place, const int total_place) {
 	 Bus_stop b(0, 100, 53, 37);
 	 a.print_minibus(5, 20);
 	 b.print_bus_stop(3);
+	 cout << "gg";
  }
