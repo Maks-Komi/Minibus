@@ -66,6 +66,12 @@ void Minibus::print_minibus(int amount_people, const int total_place, double lat
 	cout << endl;
 }
 
+//функция добавления людей на остановку
+int Bus_stop::add_people() {
+	amount_people = rand() % max_people;
+	return amount_people;
+}
+
 
  int main() {
 	 Minibus a;
@@ -73,7 +79,7 @@ void Minibus::print_minibus(int amount_people, const int total_place, double lat
 	 People q;
 	 b.print_bus_stop(3, 57.35, 57.37);
 	 a.print_minibus(5, 20, 57.35, 57.37);
-	 q.people_time();
-	 q.print();
+	 //q.people_time();
+	 //q.print();
 	 
  }
