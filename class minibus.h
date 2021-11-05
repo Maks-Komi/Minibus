@@ -1,6 +1,4 @@
 #pragma once
-#include<string>
-using namespace std;
 
 class Minibus {
 	const int total_place = 20;
