@@ -141,3 +141,5 @@ string Minibus::print_minibus(int amount_people, const int total_place, double l
 	 cout << ostanovka << endl;//Выводит остановку в строку
 	 cout << minibus << endl;//Выводит маршрутку в строку
  }
+ // S: 00.00 D: 00.00 ********* 00 *********
+ // S: 00.00 D: 00.00 +------+| 00/00 \+0-----0-\
