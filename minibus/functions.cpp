@@ -1,6 +1,7 @@
 #include<iostream>
 #include"class minibus.h"
 #include"bus stop.h"
+#include <string>
 using namespace std;
 
 //Функция выводит на экран остановку: amoun_people - количество людей на остановке
@@ -130,6 +131,23 @@ string Minibus::print_minibus(int amount_people, const int total_place, double l
 	cout << endl;	
 	return str;
 }
+void test( string str1, string str2) {
+	
+	
+	if (str1.size() == str2.size()& (str1.compare(str2) == 0)){
+		//(str1.compare(str2) != 0);
+		cout << "prpgramma rabotaet" << endl;
+		cout << str1.compare(str2) << "sadf";
+		cout << str1.size() << str2.size();
+
+	}
+	else {
+		cout << "prpgramma ne rabotaet" << endl;
+		cout << str1.size() << str2.size();
+	}
+
+
+}
 
 
  int main() {
@@ -138,8 +156,10 @@ string Minibus::print_minibus(int amount_people, const int total_place, double l
 	 Bus_stop b(0, 100, 53, 37);
 	 ostanovka = b.print_bus_stop(3, 57.35, 57.37);
 	 minibus = a.print_minibus(5, 20, 57.35, 57.37);
-	 cout << ostanovka << endl;//Выводит остановку в строку
-	 cout << minibus << endl;//Выводит маршрутку в строку
+	cout << ostanovka << endl;//Выводит остановку в строку
+	 //cout << minibus << endl;//Выводит маршрутку в строку
+	 string eee = "S: 00.00 D: 00.00 ********* 00 *********";
+	 test(ostanovka,eee);
  }
  // S: 00.00 D: 00.00 ********* 00 *********
  // S: 00.00 D: 00.00 +------+| 00/00 \+0-----0-\
